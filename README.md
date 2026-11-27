@@ -43,7 +43,7 @@ JOIN regional r  ON vi.cod_regiao  = r.cod_regiao;
 mysql -u root -p < "PROJETO SQL.sql"
 ```
 
-> ⚠️ **Atenção:** no script atual, os `INSERT` da tabela `vinhos` aparecem antes dos da tabela `vinicola`. Como `vinhos` depende de `vinicola`, o MySQL bloqueia a inserção. Para rodar, mova o bloco de inserção das vinícolas para antes do bloco dos vinhos.
+O script apaga e recria o banco `loja_vinhos`, insere os dados na ordem certa (regiões, depois vinícolas, depois vinhos) e termina mostrando o resultado da consulta principal. Testado no MariaDB.
 
 ## 🧠 O que pratiquei
 
@@ -53,6 +53,6 @@ mysql -u root -p < "PROJETO SQL.sql"
 
 ## 🔭 Próximos passos
 
-- [ ] Corrigir a ordem dos `INSERT`
-- [ ] Usar aspas simples nos textos (padrão SQL)
+- [x] Corrigir a ordem dos `INSERT`
+- [x] Usar aspas simples nos textos (padrão SQL)
 - [ ] Adicionar consultas com `GROUP BY` e agregações (vinhos por região, vinícola mais antiga etc.)
