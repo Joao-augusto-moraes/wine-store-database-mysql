@@ -1,5 +1,7 @@
 # Banco de Dados de uma Loja de Vinhos (MySQL)
 
+> 🎓 **Projeto acadêmico** · Análise e Desenvolvimento de Sistemas, PUCPR · 2024
+
 Modelagem relacional de uma loja de vinhos: **regiões, vinícolas e vinhos**, com chaves estrangeiras, dados de exemplo e uma consulta que junta as três tabelas. Meu primeiro projeto de estudos em SQL.
 
 ## 🧱 Stack
